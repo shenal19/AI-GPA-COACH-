@@ -1070,10 +1070,10 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-64 bg-white border-r min-h-screen p-4" data-testid="sidebar">
+    <div className="w-64 bg-[#0a0a0a] border-r border-gray-800 min-h-screen p-4" data-testid="sidebar">
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-purple-600">AI GPA Coach</h1>
-        <p className="text-sm text-gray-500 mt-1">Your Academic Assistant</p>
+        <h1 className="text-2xl font-bold text-purple-500">AI GPA Coach</h1>
+        <p className="text-sm text-gray-400 mt-1">Your Academic Assistant</p>
       </div>
 
       <nav className="space-y-2">
