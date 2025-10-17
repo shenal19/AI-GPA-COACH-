@@ -1070,13 +1070,13 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-64 bg-[#0a0a0a] border-r border-gray-800 min-h-screen p-4" data-testid="sidebar">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-purple-500">AI GPA Coach</h1>
-        <p className="text-sm text-gray-400 mt-1">Your Academic Assistant</p>
+    <div className="w-64 bg-black border-r border-gray-900 min-h-screen p-6" data-testid="sidebar">
+      <div className="mb-12">
+        <h1 className="text-2xl font-bold text-white mb-1">AI GPA Coach</h1>
+        <p className="text-sm text-gray-500">Your Academic Assistant</p>
       </div>
 
-      <nav className="space-y-2">
+      <nav className="space-y-1">
         {links.map((link) => {
           const Icon = link.icon;
           const isActive = location.pathname === link.path;
@@ -1085,10 +1085,14 @@ const Sidebar = () => {
               key={link.path}
               to={link.path}
               data-testid={`nav-link-${link.label.toLowerCase().replace(' ', '-')}`}
-              className={`sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg ${isActive ? 'active' : ''}`}
+              className={`flex items-center gap-3 px-3 py-2.5 rounded-md text-sm transition-colors ${
+                isActive 
+                  ? 'bg-gray-900 text-white' 
+                  : 'text-gray-400 hover:text-white hover:bg-gray-900/50'
+              }`}
             >
               <Icon className="w-5 h-5" />
-              <span className="font-medium">{link.label}</span>
+              <span>{link.label}</span>
             </Link>
           );
         })}
