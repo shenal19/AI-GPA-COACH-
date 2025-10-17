@@ -1,14 +1,14 @@
 /* App-specific styles */
 
 .gradient-bg {
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #1e293b 100%);
+  background: #000000;
   min-height: 100vh;
 }
 
 .glass-card {
-  background: rgba(30, 41, 59, 0.7);
+  background: rgba(20, 20, 20, 0.95);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .stat-card {
@@ -17,7 +17,7 @@
 
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(147, 51, 234, 0.3);
+  box-shadow: 0 12px 24px rgba(147, 51, 234, 0.4);
 }
 
 .focus-timer {
@@ -35,16 +35,18 @@
 
 .task-item {
   transition: all 0.2s;
-  background: rgba(30, 41, 59, 0.5);
+  background: rgba(20, 20, 20, 0.8);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .task-item:hover {
   background: rgba(147, 51, 234, 0.15);
+  border-color: rgba(147, 51, 234, 0.3);
 }
 
 .sidebar-link {
   transition: all 0.2s;
-  color: rgb(203, 213, 225);
+  color: rgb(229, 229, 229);
 }
 
 .sidebar-link:hover {
